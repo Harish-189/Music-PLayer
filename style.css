@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0b0339, #09195f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e5e7eb;
+}
+
+.player {
+  width: 320px;
+  background: rgba(255,255,255,0.08);
+  padding: 1.8rem;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.now-playing {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.artwork {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.artwork img {
+  width: 180px;
+  height: 180px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  transition: transform 0.4s ease;
+}
+
+.artwork img:hover {
+  transform: scale(1.03);
+}
+
+
+.now-playing h3 {
+  font-size: 1.1rem;
+}
+
+.progress-container {
+  background: #1e293b;
+  height: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+.progress {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #38bdf8, #6366f1);
+  border-radius: 10px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.controls button {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #e5e7eb;
+}
+
+.controls button:hover {
+  color: #38bdf8;
+}
+
+.playlist {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.playlist li {
+  padding: 0.6rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.playlist li.active {
+  background: rgba(100, 199, 199, 0.807);
+}
+
+.playlist li:hover {
+  background: rgba(255,255,255,0.1);
+}

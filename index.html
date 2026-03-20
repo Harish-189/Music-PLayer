@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Playlist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="player">
+  <h2 class="title">Late Night Drive Playlist</h2>
+
+  <div class="artwork">
+  <img id="cover" src="https://i.scdn.co/image/ab67616d0000b2735634b6ba66aaca7a8d97270f" alt="Album Art">
+</div>
+
+
+  <!-- CURRENT SONG -->
+  <div class="now-playing">
+    <h3 id="song-title">Song Name</h3>
+    <p id="song-artist">Artist</p>
+  </div>
+
+  <!-- PROGRESS -->
+  <div class="progress-container" id="progress-container">
+    <div class="progress" id="progress"></div>
+  </div>
+
+  <!-- CONTROLS -->
+  <div class="controls">
+    <button id="prev">⏮</button>
+    <button id="play">▶</button>
+    <button id="next">⏭</button>
+  </div>
+
+  <!-- PLAYLIST -->
+  <ul class="playlist" id="playlist"></ul>
+</div>
+
+<audio id="audio"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
